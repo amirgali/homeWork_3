@@ -76,6 +76,9 @@
                             <constraint firstItem="Y8v-tm-8kd" firstAttribute="top" secondItem="Qjp-C9-Hyq" secondAttribute="bottom" constant="10" id="xLV-er-AQb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="IP9-Bd-yYW" id="sSI-9m-Tes"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
