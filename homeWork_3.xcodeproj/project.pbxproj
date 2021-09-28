@@ -13,6 +13,11 @@
 		981C6BCF270217F500245F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981C6BCD270217F500245F25 /* Main.storyboard */; };
 		981C6BD1270217F700245F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981C6BD0270217F700245F25 /* Assets.xcassets */; };
 		981C6BD4270217F700245F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981C6BD2270217F700245F25 /* LaunchScreen.storyboard */; };
+		9844CAC72702C8CC007A0217 /* tabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9844CAC62702C8CC007A0217 /* tabBar.storyboard */; };
+		9844CAC92702CA92007A0217 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844CAC82702CA92007A0217 /* CatalogViewController.swift */; };
+		9844CACB2702CE3B007A0217 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844CACA2702CE3B007A0217 /* TextInput.swift */; };
+		9844CACF2702D3B4007A0217 /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844CACE2702D3B4007A0217 /* LogoutButton.swift */; };
+		9844CAD12702D467007A0217 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844CAD02702D467007A0217 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		981C6BD0270217F700245F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		981C6BD3270217F700245F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		981C6BD5270217F700245F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9844CAC62702C8CC007A0217 /* tabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tabBar.storyboard; sourceTree = "<group>"; };
+		9844CAC82702CA92007A0217 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		9844CACA2702CE3B007A0217 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		9844CACE2702D3B4007A0217 /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
+		9844CAD02702D467007A0217 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +69,12 @@
 				981C6BC7270217F500245F25 /* AppDelegate.swift */,
 				981C6BC9270217F500245F25 /* SceneDelegate.swift */,
 				981C6BCB270217F500245F25 /* ViewController.swift */,
+				9844CAC62702C8CC007A0217 /* tabBar.storyboard */,
+				9844CAC82702CA92007A0217 /* CatalogViewController.swift */,
+				9844CAD02702D467007A0217 /* ProfileViewController.swift */,
 				981C6BCD270217F500245F25 /* Main.storyboard */,
+				9844CACE2702D3B4007A0217 /* LogoutButton.swift */,
+				9844CACA2702CE3B007A0217 /* TextInput.swift */,
 				981C6BD0270217F700245F25 /* Assets.xcassets */,
 				981C6BD2270217F700245F25 /* LaunchScreen.storyboard */,
 				981C6BD5270217F700245F25 /* Info.plist */,
@@ -124,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9844CAC72702C8CC007A0217 /* tabBar.storyboard in Resources */,
 				981C6BD4270217F700245F25 /* LaunchScreen.storyboard in Resources */,
 				981C6BD1270217F700245F25 /* Assets.xcassets in Resources */,
 				981C6BCF270217F500245F25 /* Main.storyboard in Resources */,
@@ -137,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9844CAC92702CA92007A0217 /* CatalogViewController.swift in Sources */,
+				9844CACF2702D3B4007A0217 /* LogoutButton.swift in Sources */,
 				981C6BCC270217F500245F25 /* ViewController.swift in Sources */,
 				981C6BC8270217F500245F25 /* AppDelegate.swift in Sources */,
+				9844CAD12702D467007A0217 /* ProfileViewController.swift in Sources */,
+				9844CACB2702CE3B007A0217 /* TextInput.swift in Sources */,
 				981C6BCA270217F500245F25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +242,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_COMPILATION_MODE = "<singlefile>";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -275,7 +296,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_COMPILATION_MODE = "<singlefile>";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -295,8 +316,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.homeWork-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,8 +336,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.homeWork-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
