@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xmp-SD-ACF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cart-->
+        <scene sceneID="2rs-Ip-6Bg">
+            <objects>
+                <viewController id="Uci-gO-9na" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CwL-zc-lgI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ucL-QI-tcn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="bhB-QD-O7d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSC-Pa-zjv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128.985507246377" y="351.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fRj-qd-60T">
+            <objects>
+                <viewController id="1cZ-PB-I2u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6VV-cn-bm0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wea-ZC-ANL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P45-r9-DBG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5f-0A-AxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128.985507246377" y="1031.9196428571429"/>
+        </scene>
+        <!--Catalog View Controller-->
+        <scene sceneID="F9m-fk-TrM">
+            <objects>
+                <viewController id="ozy-sV-wOh" customClass="CatalogViewController" customModule="homeWork_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3La-Nc-q7j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="t1F-c7-dmK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DFc-Jg-MCr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vv6-xU-LYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128.985507246377" y="-255.13392857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="X5Y-8Q-bul">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarID" id="xmp-SD-ACF" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="okF-0l-yZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dgc-3F-16B" kind="relationship" relationship="viewControllers" id="1f9-yV-tHt"/>
+                        <segue destination="Uci-gO-9na" kind="relationship" relationship="viewControllers" id="nWs-kj-Ce6"/>
+                        <segue destination="BWn-Gu-O4f" kind="relationship" relationship="viewControllers" id="R0X-9C-hVN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdN-jU-odC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-841" y="392"/>
+        </scene>
+        <!--Catalog-->
+        <scene sceneID="ZK7-RF-hLA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dgc-3F-16B" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Catalog" image="list.bullet.rectangle" catalog="system" id="hkF-Sx-buh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gVz-fr-gbp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ozy-sV-wOh" kind="relationship" relationship="rootViewController" id="KPj-cg-bPy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWZ-UX-wA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218.84057971014494" y="-255.13392857142856"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="lrI-no-nyv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BWn-Gu-O4f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="ow0-cU-v4c"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q15-1i-dlk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1cZ-PB-I2u" kind="relationship" relationship="rootViewController" id="D5c-WL-Fje"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4e-1w-v5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218.84057971014494" y="1031.9196428571429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
