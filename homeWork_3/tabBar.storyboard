@@ -24,17 +24,37 @@
             </objects>
             <point key="canvasLocation" x="1128.985507246377" y="351.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="fRj-qd-60T">
             <objects>
-                <viewController id="1cZ-PB-I2u" sceneMemberID="viewController">
+                <viewController id="1cZ-PB-I2u" customClass="ProfileViewController" customModule="homeWork_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6VV-cn-bm0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB6-L4-Efb" customClass="LogoutButton" customModule="homeWork_3" customModuleProvider="target">
+                                <rect key="frame" x="177" y="428.5" width="60" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="64G-84-vaw"/>
+                                    <constraint firstAttribute="width" constant="60" id="k4P-If-db8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushLogout:" destination="1cZ-PB-I2u" eventType="touchUpInside" id="ayx-eb-8u2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Wea-ZC-ANL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qB6-L4-Efb" firstAttribute="centerY" secondItem="Wea-ZC-ANL" secondAttribute="centerY" id="1ut-0f-vJz"/>
+                            <constraint firstItem="qB6-L4-Efb" firstAttribute="centerX" secondItem="Wea-ZC-ANL" secondAttribute="centerX" id="iGt-1x-v1A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P45-r9-DBG"/>
+                    <connections>
+                        <outlet property="logout" destination="qB6-L4-Efb" id="XAB-WN-hEY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5f-0A-AxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

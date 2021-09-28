@@ -16,6 +16,8 @@
 		9844CAC72702C8CC007A0217 /* tabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9844CAC62702C8CC007A0217 /* tabBar.storyboard */; };
 		9844CAC92702CA92007A0217 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844CAC82702CA92007A0217 /* CatalogViewController.swift */; };
 		9844CACB2702CE3B007A0217 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844CACA2702CE3B007A0217 /* TextInput.swift */; };
+		9844CACF2702D3B4007A0217 /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844CACE2702D3B4007A0217 /* LogoutButton.swift */; };
+		9844CAD12702D467007A0217 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844CAD02702D467007A0217 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		9844CAC62702C8CC007A0217 /* tabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tabBar.storyboard; sourceTree = "<group>"; };
 		9844CAC82702CA92007A0217 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		9844CACA2702CE3B007A0217 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		9844CACE2702D3B4007A0217 /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
+		9844CAD02702D467007A0217 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,10 @@
 				981C6BC9270217F500245F25 /* SceneDelegate.swift */,
 				981C6BCB270217F500245F25 /* ViewController.swift */,
 				9844CAC62702C8CC007A0217 /* tabBar.storyboard */,
-				981C6BCD270217F500245F25 /* Main.storyboard */,
 				9844CAC82702CA92007A0217 /* CatalogViewController.swift */,
+				9844CAD02702D467007A0217 /* ProfileViewController.swift */,
+				981C6BCD270217F500245F25 /* Main.storyboard */,
+				9844CACE2702D3B4007A0217 /* LogoutButton.swift */,
 				9844CACA2702CE3B007A0217 /* TextInput.swift */,
 				981C6BD0270217F700245F25 /* Assets.xcassets */,
 				981C6BD2270217F700245F25 /* LaunchScreen.storyboard */,
@@ -148,8 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9844CAC92702CA92007A0217 /* CatalogViewController.swift in Sources */,
+				9844CACF2702D3B4007A0217 /* LogoutButton.swift in Sources */,
 				981C6BCC270217F500245F25 /* ViewController.swift in Sources */,
 				981C6BC8270217F500245F25 /* AppDelegate.swift in Sources */,
+				9844CAD12702D467007A0217 /* ProfileViewController.swift in Sources */,
 				9844CACB2702CE3B007A0217 /* TextInput.swift in Sources */,
 				981C6BCA270217F500245F25 /* SceneDelegate.swift in Sources */,
 			);
